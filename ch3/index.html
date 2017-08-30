@@ -5,8 +5,14 @@
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
 	<script type="text/javascript" src=../vue.js></script>
-</head>
 	<style type="text/css">
+		.demo {
+			background-color: gray;
+			display: inline-block;
+			height: 100px;
+			margin: 10px;
+			width: 100px;
+		}
 		.red {
 			background: red;
 		}
@@ -20,21 +26,49 @@
 		 }
 
 	</style>
+</head>
 <body>
 	<div id="app">
 		<div 
 			class="demo" 
 			@click="attachRed = !attachRed"
-			:class="{red: attachRed}"></div>
-		<div class="demo"></div>	
-		<div class="demo"></div>	
+			:class="{ red : attachRed, blue : !attachRed}">
+		</div>
+
+		<div 
+			class="demo" 
+			@click="attachRed = !attachRed"
+			:class="divClasses">
+		</div>
+
+		<div class="demo" :class="{red : attachRed}">
+			
+		</div>	
+		<hr>
+		<div class="demo" :class="[color, {red : attachRed}]">
+			
+		</div>
+		<div class="demo" :class="color">
+			
+		</div><br>
+		Write : blue or green, red
+		<input type="text" v-model="color">
 	</div>
 </body>
 <script>
 	new Vue({
 		el: '#app',
 		data: {
-			attachRed: false
+			attachRed : false,
+			color : "green"
+		},
+		computed: {
+			divClasses: function() {
+				return {
+					red: this.attachRed,
+					blue: this.attachRed
+				}
+			}
 		}
 	});
 </script>
