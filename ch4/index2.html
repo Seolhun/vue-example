@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Vue.js Getting started</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=../vue.js></script>
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<!-- Value, Index -->
+			<li v-for="(sport, i) in sports">
+				{{ sport }} {{ i }}
+			</li>
+		</ul>
+		
+		<hr>
+		<template v-for="(sport, index) in sports">
+			<h1>{{ sport }} </h1>
+			<p>{{ index }}</p>
+		</template>
+		
+		<hr>
+		<ul>
+			<li v-for="player in players">
+				<div v-for="(value, key, index) in player">
+					key : {{ key }}  || value : {{ value }} || index : {{ index }} ||
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	<hr style="margin-top: 100px">
+	<footer>
+		<div>
+			Author : <a href="https://github.com/Seolhun">SeolHun </a>
+		</div>
+	</footer>
+</body>
+<script>
+	new Vue({
+		el: '#app',
+		data: {
+			sports: ['soccer', 'football', 'baseball', 'basketball'],
+			players: [
+				{name : 'Ronaldo', age : 28, color : 'white'},
+				{name : 'Rooney', age : 29, color : 'red'},
+				{name : 'Kershaw', age : 30, color : 'blue'},
+				{name : 'Jordan', age : 35, color : 'black'}
+			]
+		},
+		computed: {
+
+		},
+		watch: {
+
+		},
+		methods: {
+
+		}
+	});
+</script>
+</html>

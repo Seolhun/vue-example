@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Vue.js Getting started</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=../vue.js></script>
+</head>
+<body>
+	<div id="app">
+		<p v-if="show">You can see me!!</p>
+		<p v-else>Now you see me!!</p>
+
+		<template v-if="show">
+			<h1>Heading</h1>
+			<p>Inside a template</p>
+		</template>
+		<p v-show="show">Do you also see me?</p>
+		<button @click="show = !show">Switch</button>
+	</div>
+
+	<hr style="margin-top: 100px">
+	<footer>
+		<div>
+			Author : <a href="https://github.com/Seolhun">SeolHun </a>
+		</div>
+	</footer>
+</body>
+<script>
+	new Vue({
+		el: '#app',
+		data: {
+			show: true
+		},
+		computed: {
+
+		},
+		watch: {
+
+		},
+		methods: {
+			show: function(){
+
+			}
+		}
+	});
+</script>
+</html>
