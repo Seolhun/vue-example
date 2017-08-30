@@ -16,3 +16,8 @@ Building example using VueJS step by step, you just follow up this project.
 1. When I have a time to study VueJS, Adding the example step by step.
 2. Course name is simple. ex) directive > ch1 : if you want know details, just read README.md.
 
+
+- Chapter Details
+1. 
+2. 
+3. Dynamic CSS
