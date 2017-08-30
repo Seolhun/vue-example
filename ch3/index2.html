@@ -29,30 +29,10 @@
 </head>
 <body>
 	<div id="app">
-		<div 
-			class="demo" 
-			@click="attachRed = !attachRed"
-			:class="{ red : attachRed, blue : !attachRed}">
-		</div>
-
-		<div 
-			class="demo" 
-			@click="attachRed = !attachRed"
-			:class="divClasses">
-		</div>
-
-		<div class="demo" :class="{red : attachRed}">
-			
-		</div>	
-		<hr>
-		<div class="demo" :class="[color, {red : attachRed}]">
-			
-		</div>
-		<div class="demo" :class="color">
-			
-		</div><br>
-		Write : blue or green, red
+		<div class="demo" :style="{backgroundColor : color}"></div>
+		<div class="demo" :style="myStyle"></div>
 		<input type="text" v-model="color">
+		<input type="text" v-model="width">
 	</div>
 	<hr style="margin-top: 100px">
 	<footer>
@@ -65,14 +45,14 @@
 	new Vue({
 		el: '#app',
 		data: {
-			attachRed : false,
-			color : "green"
+			color : 'gray',
+			width : 100,
 		},
 		computed: {
-			divClasses: function() {
+			myStyle: function() {
 				return {
-					red: this.attachRed,
-					blue: this.attachRed
+					backgroundColor: this.color,
+					width: this.width + 'px'
 				}
 			}
 		}

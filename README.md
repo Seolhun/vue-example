@@ -16,3 +16,9 @@ Building example using VueJS step by step, you just follow up this project.
 1. [ch1.Template](https://github.com/Seolhun/vue-example/tree/master/ch1)
 2. [ch2.Directive](https://github.com/Seolhun/vue-example/tree/master/ch2)
 3. [ch3.Dynamic CSS](https://github.com/Seolhun/vue-example/tree/master/ch3)
+4. [ch4.Dom Interaction](https://github.com/Seolhun/vue-example/tree/master/ch4)
+	- if, else-if, else
+	- show
+	- for
+
+
