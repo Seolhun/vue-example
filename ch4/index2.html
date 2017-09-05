@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=../vue.js></script>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="app">
@@ -16,12 +16,10 @@
 		</ul>
 		
 		<hr>
-		<template v-for="(sport, index) in sports">
-			<h1>{{ sport }} </h1>
-			<p>{{ index }}</p>
+		<template v-for="(sport, index) in sports" :key="sport">
+			{{ sport }} ({{ index }})
 		</template>
-		
-		<hr>
+		<button @click="sports.push('Pingpong')">Add New</button>
 		<ul>
 			<li v-for="player in players">
 				<div v-for="(value, key, index) in player">
@@ -30,6 +28,8 @@
 			</li>
 		</ul>
 
+		<hr>
+		<span v-for="n in 10">{{ n }} </span>
 	</div>
 
 	<hr style="margin-top: 100px">

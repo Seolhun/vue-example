@@ -1,8 +1,7 @@
 # Dom interaction
 
 This chapter is 'Dom interaction using VueJS'.
-If you want to change Dom continuously, this chapter is helpful.
-
+If you want to change Dom following condition, this chapter is helpful.
 
 1. if state
 - v-if, v-else, v-else-if(VueJS 2.1) 
