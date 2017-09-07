@@ -4,23 +4,52 @@
 <meta charset="utf-8">
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=../vue.js></script>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="app">
-		<button v-on:click="increaseCounts">Click me!!</button>
-		<p>{{ counts }}</p>
+		<button v-on:click="increaseCounts()">Add 1</button>
+		<button v-on:click="increaseCountsStep(2, $event)">Add jump</button>
+		<p>{{ counter }}</p>
+		<p>{{ counter * 2 }}</p>
+		<p>{{ counter > 10 ? 'Greater than 10' : 'Smaller than 10'}}</p>
+		<hr>
+		<p v-on:mousemove="updateCordinates">Cordinates: {{ x }} / {{ y}}
+			- <span v-on:mousemove.stop="">Dead Spot</span>
+		</p>
+		
+		<hr>
+		<input type="text" v-on:keyup="alertMe($event)">
 	</div>
+	<hr style="margin-top: 100px; text-align: center;">
+	<footer>
+	    <div>
+	        Author : <a href="https://github.com/Seolhun">SeolHun </a>
+	    </div>
+	</footer>
 </body>
 <script>
 	new Vue({
 		el: '#app',
 		data: {
-			counts: 0
+			counter: 0,
+			x: 0, 
+			y: 0
 		},
 		methods: {
+			// Originally, $event need not written directly.
 			increaseCounts: function() {
-				this.counts++;
+				this.counter++;
+			},
+			increaseCountsStep: function(step, event) {
+				this.counter += step;
+			},
+			updateCordinates: function(event) {
+				this.x = event.clientX;
+				this.y = event.clientY;
+			},
+			alertMe: function(event){
+				alert("Alert Me!! : "+event.target.value)
 			}
 		}
 	});

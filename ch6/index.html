@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue.js Getting started</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app1">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="show" ref="myButton">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+</div>
+
+<div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="onChange">Change somthing in Vue 1</button>
+</div>
+
+<hr style="margin-top: 100px;">
+<footer>
+    <div style="text-align : center;">
+        Author : <a href="https://github.com/Seolhun">SeolHun </a>
+    </div>
+</footer>
+</body>
+<script src="app.js"></script>
+</html>
