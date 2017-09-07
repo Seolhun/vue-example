@@ -16,14 +16,16 @@ new Vue({
 		}, attack : function() {
 			var damage = this.calculateDamage(3, 10);
 			this.monsterHealth -= damage;
-
-			damage = this.calculateDamage(5, 12);
-			this.playerHealth -= damage;
+			this.monsterAttack();
 
 			this.checkWin();
+		}, monsterAttack : function() {
+			damage = this.calculateDamage(5, 12);
+			this.playerHealth -= damage;
 		}, specialAttack : function(){
 			var damage = this.calculateDamage(10, 20);
 			this.monsterHealth -= damage;
+			this.monsterAttack();
 
 			this.checkWin();
 		}, heal : function(){
@@ -37,12 +39,10 @@ new Vue({
 			if (this.playerHealth <= 0 ){
 				alert('You lost!');
 				this.gameIsRunning = false;
-				return true;
 			} else if (this.monsterHealth <= 0 ){
 				alert('You win!');
 				this.gameIsRunning = false;
-				return false;
-			} 
+			}
 		}
 	}
 })
