@@ -1,0 +1,14 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <h1 ref="heading">{{ title }}</h1>
+  <button v-on:click="show">Show Paragraph</button>
+  <p v-if="showParagraph">This is not always visible</p>
+</div>
+
+<hr style="margin-top: 100px; text-align: center;">
+<footer>
+    <div>
+        Author : <a href="https://github.com/Seolhun">SeolHun </a>
+    </div>
+</footer>

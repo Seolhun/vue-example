@@ -16,10 +16,7 @@
                     class="healthbar text-center" 
                     style="background-color: green; margin: 0; color: white;"
                     :style="{width: playerHealth + '%'}">
-                    
-
                     {{ playerHealth }}
-
                 </div>
             </div>
         </div>
@@ -51,13 +48,22 @@
     <section class="row log">
         <div class="small-12 columns">
             <ul>
-                <li>
-
+                <li v-for="turn in turns" 
+                v-if="turns.length > 0"
+                :class="{'player-turn' : turn.isPlayer, 'monster-turn' : !turn.isPlayer}">
+                    {{ turn.text }}
                 </li>
             </ul>
         </div>
     </section>
 </div>
+
+<hr style="margin-top: 100px; text-align: center;">
+<footer>
+    <div>
+        Author : <a href="https://github.com/Seolhun">SeolHun </a>
+    </div>
+</footer>
 <script src="app.js"></script>
 </body>
 </html>
