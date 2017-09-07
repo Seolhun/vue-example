@@ -12,7 +12,13 @@ Building example using VueJS step by step, you just follow up this project.
 - Course
 ![VueJS Course](course.png)
 
-- Process
-1. When I have a time to study VueJS, Adding the example step by step.
-2. Course name is simple. ex) directive > ch1 : if you want know details, just read README.md.
+- Chapter Details
+1. [ch1.Template](https://github.com/Seolhun/vue-example/tree/master/ch1)
+2. [ch2.Directive](https://github.com/Seolhun/vue-example/tree/master/ch2)
+3. [ch3.Dynamic CSS](https://github.com/Seolhun/vue-example/tree/master/ch3)
+4. [ch4.Dom Interaction](https://github.com/Seolhun/vue-example/tree/master/ch4)
+	- if, else-if, else
+	- show
+	- for
+
 

@@ -4,10 +4,9 @@
 <meta charset="utf-8">
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=../vue.js></script>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
-
 	<div id="app">
 		<input type="text" v-on:input="changeTitle">
 		<!-- Just loaded onetime -->
@@ -22,6 +21,14 @@
 		<a v-bind:href="googleLink">Google</a>
 		<p v-html="finishedLink"></p>
 	</div>
+
+	<hr style="margin-top: 100px;">
+	<footer>
+	    <div style="text-align : center;">
+	        Author : <a href="https://github.com/Seolhun">SeolHun </a>
+	    </div>
+	</footer>
+
 </body>
 <script>
 	new Vue({
