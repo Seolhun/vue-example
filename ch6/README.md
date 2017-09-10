@@ -1,6 +1,6 @@
-# Conditionals & Lists
+# Instance & Mount
 
-[Conditionals & Lists](https://vuejs.org/v2/guide/conditional.html)
+[Instance & Mount](https://vuejs.org/v2/guide/instance.html)
 
-This chapter use all that we learn until ch5.
-- Simple project, Fighting Monster
+This chapter is Instance and Mount
+- Make multiple instance and Mount instance
