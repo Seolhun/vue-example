@@ -8,6 +8,7 @@
 </head>
 <body>
 <div id="app1">
+<<<<<<< HEAD
     <h1 ref="heading">{{ title }}</h1>
     <button @click="show" ref="myButton">Show Paragraph</button>
     <p v-if="showParagraph">This is not always visible</p>
@@ -16,7 +17,46 @@
 <div id="app2">
     <h1 ref="heading">{{ title }}</h1>
     <button @click="onChange">Change somthing in Vue 1</button>
+=======
+    <span><strong>App1</strong></span>
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show" ref="myButton">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+    <hello></hello>
 </div>
+
+<hr style="margin-top: 50px;">
+<div id="app2">
+    <span><strong>App2</strong></span>
+    <h1>{{ title }}</h1>
+    <button @click="onChange"> Change something in Vue 1</button>
+    <hello></hello>
+    <hello></hello>
+</div>
+
+<hr style="margin-top: 50px;">
+<span><strong>App3</strong></span>
+<div>
+    <span>Tag using component</span>
+    <hello></hello>
+
+    <hr>
+    <span>Class using component</span>
+    <div class="hello"></div>
+
+    <hr>
+    <span>ID using component</span>
+    <div id="hello"></div>
+>>>>>>> feature/vueDom
+</div>
+
+
+<hr style="margin-top: 50px;">
+<span><strong>App4</strong></span>
+<div id="app4">
+
+</div>
+
 
 <hr style="margin-top: 100px;">
 <footer>
