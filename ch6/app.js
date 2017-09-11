@@ -1,7 +1,14 @@
+//Instance
 var data = {
     title: 'The VueJS Instance',
     showParagraph: false
 };
+
+//Components
+//We can use <hello></hello> throughout.
+Vue.component('hello', {
+    template: '<h1>Hello!, Tag using Components</h1>'
+});
 
 var vm1 = new Vue({
     el: '#app1',
@@ -28,6 +35,7 @@ var vm1 = new Vue({
     }
 });
 
+//Mount
 vm1.$mount('#app1');
 
 console.log(vm1.$data === data);
@@ -45,10 +53,21 @@ var vm2 = new Vue({
     }
 });
 
+//Switching El
 var vm3 = new Vue({
-    template: '<h1>Hello!</h1>'
+    // el: '.hello',
+    el: 'hello',
+    // el: '#hello',
+    template: '<h1>Hello!, Tag using Components</h1>'
 });
 
-vm3.$mount('#app3');
+var vm4 = new Vue({
+    template: '<h1>Instance mount and Component append</h1>'
+});
+
+vm4.$mount();
+document.getElementById('app4').appendChild(vm4.$el);
+
+
 
 
