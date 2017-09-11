@@ -1,8 +1,21 @@
+<<<<<<< HEAD
+=======
+//Instance
+>>>>>>> feature/vueDom
 var data = {
     title: 'The VueJS Instance',
     showParagraph: false
 };
 
+<<<<<<< HEAD
+=======
+//Components
+//We can use <hello></hello> throughout.
+Vue.component('hello', {
+    template: '<h1>Hello!, Tag using Components</h1>'
+});
+
+>>>>>>> feature/vueDom
 var vm1 = new Vue({
     el: '#app1',
     data: data,
@@ -10,9 +23,13 @@ var vm1 = new Vue({
         show: function () {
             this.showParagraph = true;
             this.updateTitle('The VueJS Instance (Updated)');
+<<<<<<< HEAD
             <!-- I can access all references I registered using the name -->
             this.$refs.myButton.innerText = 'Refs Test';
             console.log(this.$refs);
+=======
+            this.$refs.myButton.innerText = 'Test';
+>>>>>>> feature/vueDom
         },
         updateTitle: function (title) {
             this.title = title;
@@ -30,17 +47,25 @@ var vm1 = new Vue({
     }
 });
 
+<<<<<<< HEAD
 vm1.newProp = 'New!';
 //you can see this properties on the console.
 console.log(vm1);
 
 console.log(vm1.$data === data);
 
+=======
+//Mount
+vm1.$mount('#app1');
+
+console.log(vm1.$data === data);
+>>>>>>> feature/vueDom
 vm1.$refs.heading.innerText = 'Something else';
 
 var vm2 = new Vue({
     el: '#app2',
     data: {
+<<<<<<< HEAD
         title: 'The VueJS Instance2',
         showParagraph: false
     },
@@ -57,7 +82,35 @@ var vm2 = new Vue({
     watch: {
         title: function (value) {
             alert('Title changed, new value: ' + value);
+=======
+        title: 'The second Instance'
+    },
+    methods: {
+        onChange: function () {
+            vm1.title = 'Changed!';
+>>>>>>> feature/vueDom
         }
     }
 });
 
+<<<<<<< HEAD
+=======
+//Switching El
+var vm3 = new Vue({
+    // el: '.hello',
+    el: 'hello',
+    // el: '#hello',
+    template: '<h1>Hello!, Tag using Components</h1>'
+});
+
+var vm4 = new Vue({
+    template: '<h1>Instance mount and Component append</h1>'
+});
+
+vm4.$mount();
+document.getElementById('app4').appendChild(vm4.$el);
+
+
+
+
+>>>>>>> feature/vueDom
