@@ -5,12 +5,28 @@
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
 	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
 	<div id="app">
-		<input type="txt" name="question" :model="question">
+		<my-component>
 
+		</my-component>
+		<hr>
+		<my-component>
+
+		</my-component>
+	</div>
+
+	<hr>
+
+	<div id="app2">
+		<my-component>
+
+		</my-component>
+		<hr>
+		<my-component>
+
+		</my-component>
 	</div>
 
 	<hr style="margin-top: 100px">
@@ -20,5 +36,5 @@
 		</div>
 	</footer>
 </body>
-<script src="dynamo.js"></script>
+<script src="app.js"></script>
 </html>
