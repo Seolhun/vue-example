@@ -4,11 +4,13 @@
 <meta charset="utf-8">
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=../vue.js></script>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="app">
-
+		<h1>{{ title }}</h1>
+		<button @click="title = 'Changed'">Update Title</button>
+		<button @click="destroy">Destroy</button>
 	</div>
 
 	<hr style="margin-top: 100px">
@@ -18,21 +20,5 @@
 		</div>
 	</footer>
 </body>
-<script>
-	new Vue({
-		el: '#app',
-		data: {
-
-		},
-		computed: {
-
-		},
-		watch: {
-
-		},
-		methods: {
-
-		}
-	});
-</script>
+<script src="app.js"></script>
 </html>
