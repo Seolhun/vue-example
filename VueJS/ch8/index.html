@@ -4,13 +4,29 @@
 <meta charset="utf-8">
 	<title>Vue.js Getting started</title>
 	<link rel="stylesheet" type="text/css" href="">
-	<script type="text/javascript" src=../vue.js></script>
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="app">
-		<h1>{{ title }}</h1>
-		<button @click="title = 'Changed'">Update Title</button>
-		<button @click="destroy">Destroy</button>
+		<my-component>
+
+		</my-component>
+		<hr>
+		<my-component>
+
+		</my-component>
+	</div>
+
+	<hr>
+
+	<div id="app2">
+		<my-component>
+
+		</my-component>
+		<hr>
+		<my-component>
+
+		</my-component>
 	</div>
 
 	<hr style="margin-top: 100px">
