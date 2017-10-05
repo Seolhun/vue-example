@@ -3,6 +3,8 @@
     <h1>The User Component</h1>
     <p>I'm an awesome User!</p>
     <button @click="changeName">Change my name</button>
+    <p>Name is {{ name }}</p>
+    <p>Age is {{ age }}</p>
     <hr>
     <div class="row">
       <div class="col-xs-12 col-sm-6">
@@ -11,11 +13,16 @@
           :myName="name"
           @nameWasReset="name = $event"
           :resetFn="resetName"
+          :userAge="age"
         >
         </app-user-detail>
       </div>
+
       <div class="col-xs-12 col-sm-6">
-        <app-user-edit></app-user-edit>
+        <app-user-edit
+          :userAge="age"
+          @ageWasEdited="age = $event"
+        ></app-user-edit>
       </div>
     </div>
   </div>
@@ -28,11 +35,12 @@
   export default {
     data: function () {
       return {
-        name: 'SeolHun'
+        name: 'SeolHun',
+        age: 28
       }
     },
     methods: {
-      changeName(){
+      changeName() {
         this.name = 'Shooney-HunSeol'
       },
       resetName() {

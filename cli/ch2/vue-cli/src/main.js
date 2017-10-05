@@ -3,11 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+
+export const eventBus = new Vue();
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   template: '<App/>',
-  components: { App }
-})
+  components: {App}
+});
+
