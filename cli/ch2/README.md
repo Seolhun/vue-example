@@ -12,3 +12,7 @@ $ npm run dev
 ```
 
 2. Components and Props
+
+3. Change parents props on child directly
+
+4. Send components using eventBus 
