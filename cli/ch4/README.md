@@ -1,9 +1,9 @@
-# Vue Cli Getting started 1
+# Vue Cli Getting started 4
 
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
 ---
-### Introduction to Components
+### Second Course Project - Wonderful Quotes
 
 1. Run Vue-Cli with Webpack
 ```bash
@@ -12,3 +12,7 @@ $ cd vue-cli
 $ npm install
 $ npm run dev
 ```
+
+2. Using Multiple Conponents
+
+3. Passing data through slot and components

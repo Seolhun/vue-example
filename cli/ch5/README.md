@@ -1,9 +1,9 @@
-# Vue Cli Getting started 1
+# Vue Cli Getting started 5
 
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
 ---
-### Introduction to Components
+### Handling User input with Forms
 
 1. Run Vue-Cli with Webpack
 ```bash
@@ -12,3 +12,7 @@ $ cd vue-cli
 $ npm install
 $ npm run dev
 ```
+
+2. Using Form
+
+3. v-bind, v-model
