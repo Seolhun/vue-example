@@ -2,6 +2,8 @@
 
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
+---
+### Communicating between Components
 
 1. Run Vue-Cli with Webpack
 ```bash

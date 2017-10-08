@@ -2,6 +2,8 @@
 
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
+---
+### Advanced Component Usage
 
 1. Run Vue-Cli with Webpack
 ```bash
