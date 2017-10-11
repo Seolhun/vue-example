@@ -32,5 +32,8 @@ Building example using VueJS step by step, you just follow up this project.
 1. [Getting Started Vue Cli](https://github.com/Seolhun/vue-example/tree/master/cli/ch1)
 2. [Parents & child components and Props control](https://github.com/Seolhun/vue-example/tree/master/cli/ch2)
 3. [Passing content with Slot](https://github.com/Seolhun/vue-example/tree/master/cli/ch3)
-
+4. [Conponents](https://github.com/Seolhun/vue-example/tree/master/cli/ch4)
+5. [Form & Vue Model](https://github.com/Seolhun/vue-example/tree/master/cli/ch5)
+6. [Directives ](https://github.com/Seolhun/vue-example/tree/master/cli/ch6)
+7. [Filter & Mixins](https://github.com/Seolhun/vue-example/tree/master/cli/ch7)
 
