@@ -2,6 +2,8 @@
 
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
+---
+### Introduction to Components
 
 1. Run Vue-Cli with Webpack
 ```bash
