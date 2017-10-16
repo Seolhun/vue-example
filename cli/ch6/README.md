@@ -3,7 +3,7 @@
 [Vue-Cli Github](https://github.com/vuejs/vue-cli)
 
 ---
-### Handling User input with Forms
+### Handling Directives
 
 1. Run Vue-Cli with Webpack
 ```bash
