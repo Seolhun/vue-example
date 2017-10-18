@@ -31,9 +31,11 @@
       }
     },
     beforeRouteEnter(to, from, next){
-      next(vm => {
-        vm.link;
-      });
+      if (true) {
+        next();
+      } else {
+        next(false);
+      }
     }
   }
 </script>
