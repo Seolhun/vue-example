@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '../components/Home.vue'
+import Header from '../components/Header.vue'
 import User from '../components/user/User.vue'
 import UserDetail from '../components/user/UserDetail.vue'
 import UserEdit from '../components/user/UserEdit.vue'
@@ -12,29 +13,41 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/home',
+      path: '',
       name: 'Home',
-      component: Home
+      components: {
+        default: Home,
+        'header-top': Header
+      }
     },
     {
-      path: '/user/:id',
+      path: '/user',
       name: 'User',
-      component: User
+      components: {
+        default: User,
+        'header-bottom': Header
+      },
+      children: [
+        {path: '', component: UserStart},
+        {path: ':id', component: UserDetail, beforeEnter: (to, from, next) => {
+          console.log('Inside route setup');
+          next();
+        }},
+        {path: ':id/edit', component: UserEdit, name: 'userEdit'}
+      ]
     },
-    {
-      path: '/detail',
-      name: 'UserDetail',
-      component: UserDetail
-    },
-    {
-      path: '/edit',
-      name: 'UserEdit',
-      component: UserEdit
-    },
-    {
-      path: '/start',
-      name: 'UserStart',
-      component: UserStart
+    {path: '/redirect-me', redirect: {name: 'Home'}},
+    {path: '*', redirect: '/'}
+  ],
+  mode: 'history',
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else if (to.hash) {
+      return {
+        selector: to.hash
+      }
     }
-  ]
+    return {x: 0, y: 700};
+  }
 })
