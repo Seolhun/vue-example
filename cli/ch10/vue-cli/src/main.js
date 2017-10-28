@@ -6,11 +6,6 @@ import router from './router'
 
 Vue.config.productionTip = false;
 
-router.beforeEach((to, from, next) => {
-  console.log('Global beforeEach');
-  next();
-});
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

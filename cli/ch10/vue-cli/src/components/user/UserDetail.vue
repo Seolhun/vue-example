@@ -15,7 +15,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         link: {
           name: 'userEdit',
@@ -30,7 +30,8 @@
         }
       }
     },
-    beforeRouteEnter(to, from, next){
+    beforeRouteLeave (to, from, next) {
+      console.log('beforeRouterEnter in UserDetail ')
       if (true) {
         next();
       } else {

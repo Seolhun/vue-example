@@ -10,7 +10,7 @@
 <script>
   export default {
     methods: {
-      navigateToHome() {
+      navigateToHome () {
         this.$router.push({path: '/'});
       }
     },
