@@ -1,3 +1,5 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/Seolhun/vue-example.svg?columns=all)](https://waffle.io/Seolhun/vue-example)
+
 # vue-example
 Building example using VueJS step by step, you just follow up this project.
 
