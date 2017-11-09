@@ -144,7 +144,7 @@
         
         3. v-show
             - v-show는 단순히 엘리먼트에 display CSS 속성을 토글합니다.
-            - **v-show는 <template> 구문을 지원하지 않으며 v-else와도 작동하지 않습니다.**
+            - v-show는 '<template>' 구문을 지원하지 않으며 v-else와도 작동하지 않습니다.
             - 비교해보면, v-show는 훨씬 단순합니다. CSS 기반 토글만으로 초기 조건에 관계 없이 엘리먼트가 항상 렌더링 됩니다.
             
         4. v-if vs v-show
