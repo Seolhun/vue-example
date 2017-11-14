@@ -141,7 +141,18 @@
             </div>
             ```
         2. Controlling Reusable Elements with key
-        
+            - Key값을 사용하여 해당 template를 렌더링 할 수 있씁니다
+            ```html
+            <p>{{ loginType }}</p>
+            <template v-if="loginType === 'username'">
+                <label>사용자 이름</label>
+                <input placeholder="사용자 이름을 입력하세요">
+            </template>
+            <template v-else>
+                <label>이메일</label>
+                <input placeholder="이메일 주소를 입력하세요">
+            </template>
+            ```
         3. v-show
             - v-show는 단순히 엘리먼트에 display CSS 속성을 토글합니다.
             - v-show는 '<template>' 구문을 지원하지 않으며 v-else와도 작동하지 않습니다.
@@ -166,7 +177,6 @@
            </div> 
         </div>
         ```
-         
         5. v-if and v-for
         - v-for는 v-if와 함께 사용하는 경우, v-if보다 높은 우선순위를 갖습니다.
             - **이러한 이유는 v-for로 해당 데이터와 조건을 비교하여 Rendering 할지 말지를 결정해야 하기 떄문입니다**
