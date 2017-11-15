@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
 cli/**/**/node_modules
 cli/**/**/build
-.idea
+.idea/*
 .DS_Store
