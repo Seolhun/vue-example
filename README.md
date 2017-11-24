@@ -8,9 +8,10 @@ Building example using VueJS step by step, you just follow up this project.
 - Reference
 	- [en-Vue.js](https://vuejs.org/)
 	- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
+	- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
 
 - Course
-![VueJS Course](course.png)
+![VueJS Course](readmeimg/course.png)
 
 - Chapter Details
 ---
@@ -43,4 +44,7 @@ Building example using VueJS step by step, you just follow up this project.
 8. [Animation](https://github.com/Seolhun/vue-example/tree/master/cli/ch8)
 9. [Http](https://github.com/Seolhun/vue-example/tree/master/cli/ch9)
 10. [Router](https://github.com/Seolhun/vue-example/tree/master/cli/ch10)
+11. [Vuex](https://github.com/Seolhun/vue-example/tree/master/cli/ch11)
+![Vuex Flow](readmeimg/vuex.png)
+
 
