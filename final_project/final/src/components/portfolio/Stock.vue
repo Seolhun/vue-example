@@ -15,15 +15,16 @@
           class="form-control"
           placeholder="Quantity"
           v-model="quantity"
+          :class="{dagner: insufficientQuantity}"
         >
       </div>
       <div class="pull-right">
         <button
           class="btn btn-info"
           @click="sellStock"
-          :disabled="quantity <= 0 || Number.isInteger(quantity)"
+          :disabled="insufficientQuantity || quantity <= 0 || Number.isInteger(quantity)"
         >
-          Sell
+          {{ insufficientQuantity ? 'Over' : 'Sell' }}
         </button>
       </div>
     </div>
@@ -38,6 +39,11 @@
     data () {
       return {
         quantity: 0
+      }
+    },
+    computed: {
+      insufficientQuantity () {
+        return this.quantity > this.stock.quantity
       }
     },
     methods: {
@@ -57,3 +63,9 @@
     }
   }
 </script>
+
+<style scoped>
+  .dagner {
+    border: 1px solid red;
+  }
+</style>

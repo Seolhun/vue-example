@@ -22,6 +22,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 _vue2.default.config.productionTip = false;
 
+_vue2.default.filter('currency', function (value) {
+  return '$' + value.toLocaleString();
+});
+
 /* eslint-disable no-new */
 new _vue2.default({
   el: '#app',
