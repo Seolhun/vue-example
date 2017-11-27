@@ -3,16 +3,16 @@
 - Author : [SeolHun](https://github.com/Seolhun)
 - IDE : SublimeText3 or Webstorm
 - Version : Vue 2.5.3
-- Started Date : 2017.11.27
+- Started Date : 2017.11.09
 ---
-#### Presentation
+### Presentation
 - Transitions & Animation
     - 진입/진출 그리고 리스트 트랜지션
     - 트렌지션 상태
 
-#### Content
-###### 1. 진입/진출 그리고 리스트 트랜지션
-1 개요
+### Content
+#### 1. 진입/진출 그리고 리스트 트랜지션
+1. 개요
     - Vue는 항목이 DOM에 삽입, 갱신 또는 제거 될 때 트랜지션 효과를 적용하는 다양한 방법을 제공합니다. 여기에는 다음과 같은 도구가 포함됩니다.
         - CSS 트랜지션 및 애니메이션을 위한 클래스를 자동으로 적용합니다.
         - [Animate.css](https://daneden.github.io/animate.css/)와 같은 타사 CSS 애니메이션 라이브러리 통합
@@ -210,4 +210,4 @@
     - **이벤트 훅은 단지 메소드이기 때문에 컨텍스트의 모든 데이터에 액세스 할 수 있습니다.** 즉, 컴포넌트의 상태에 따라 JavaScript 트랜지션이 다르게 동작 할 수 있습니다.
 
 ---
-###### 2. 트렌지션 상태
+#### 2. 트렌지션 상태
