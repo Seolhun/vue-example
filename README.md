@@ -7,7 +7,7 @@ Building example using VueJS step by step, you just follow up this project.
 - IDE : SublimeText3 or webstorm(Vue Cli)
 - Started Date : 2017-08-30
 ---
-- Reference
+### Reference
 	- [en-Vue.js](https://vuejs.org/)
 	- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
 	- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
@@ -17,7 +17,7 @@ Building example using VueJS step by step, you just follow up this project.
 
 - Chapter Details
 ---
-- Vue JS
+### Vue JS
 1. [ch1.Template](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch1)
 2. [ch2.Directive](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch2)
 3. [ch3.Dynamic CSS](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch3)
@@ -35,7 +35,7 @@ Building example using VueJS step by step, you just follow up this project.
     - Multiple Components
 
 ---
-- Vue Cli with Webpack
+### Vue Cli with Webpack
 1. [Getting Started Vue Cli](https://github.com/Seolhun/vue-example/tree/master/cli/ch1)
 2. [Parents & child components and Props control](https://github.com/Seolhun/vue-example/tree/master/cli/ch2)
 3. [Passing content with Slot](https://github.com/Seolhun/vue-example/tree/master/cli/ch3)
@@ -48,5 +48,10 @@ Building example using VueJS step by step, you just follow up this project.
 10. [Router](https://github.com/Seolhun/vue-example/tree/master/cli/ch10)
 11. [Vuex](https://github.com/Seolhun/vue-example/tree/master/cli/ch11)
 ![Vuex Flow](readmeimg/vuex.png)
+
+---
+### Final Project
+- [Vue Final Project](https://github.com/Seolhun/vue-example/tree/master/cli/final_project)
+	- Trader Stocks
 
 
