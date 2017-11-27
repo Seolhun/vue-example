@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue.js Getting started</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="example-1">
+                <button @click="show = !show">
+                    Toggle render
+                </button>
+                <transition name="slide-fade">
+                    <p v-if="show">hello</p>
+                </transition>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div style="text-align : center;">
+        <h4>Author : <a target="_blank" href="https://github.com/Seolhun">SeolHun </a></h4>
+    </div>
+</footer>
+
+</body>
+<script>
+	const vm = new new Vue({
+		el: '#example-1',
+		data: {
+			show: true
+		}
+	})
+</script>
+<style>
+    /* 애니메이션 진입 및 진출은 다른 지속 시간 및  */
+    /* 타이밍 기능을 사용할 수 있습니다. */
+    .slide-fade-enter-active {
+        transition: all .3s ease;
+    }
+
+    .slide-fade-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+
+    .slide-fade-enter, .slide-fade-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */
+    {
+        transform: translateX(10px);
+        opacity: 0;
+    }
+</style>
+</html>
