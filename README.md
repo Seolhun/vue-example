@@ -8,9 +8,9 @@ Building example using VueJS step by step, you just follow up this project.
 - Started Date : 2017-08-30
 ---
 ### Reference
-	- [en-Vue.js](https://vuejs.org/)
-	- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
-	- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
+- [en-Vue.js](https://vuejs.org/)
+- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
+- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
 
 - Course
 ![VueJS Course](readmeimg/course.png)
