@@ -1,21 +1,14 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/Seolhun/vue-example.svg?columns=all)](https://waffle.io/Seolhun/vue-example)
 
-# vue-example
+# Vue-example
 Building example using VueJS step by step, you just follow up this project.
-
 - Author : [SeolHun](https://github.com/Seolhun)
 - IDE : SublimeText3 or webstorm(Vue Cli)
 - Started Date : 2017-08-30
----
-### Reference
-- [en-Vue.js](https://vuejs.org/)
-- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
-- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
 
-- Course
+## Course
 ![VueJS Course](readmeimg/course.png)
 
-- Chapter Details
 ---
 ### Vue JS
 1. [ch1.Template](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch1)
@@ -34,8 +27,7 @@ Building example using VueJS step by step, you just follow up this project.
 8. [ch8.Components](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch8)
     - Multiple Components
 
----
-### Vue Cli with Webpack
+## Vue Cli with Webpack
 1. [Getting Started Vue Cli](https://github.com/Seolhun/vue-example/tree/master/cli/ch1)
 2. [Parents & child components and Props control](https://github.com/Seolhun/vue-example/tree/master/cli/ch2)
 3. [Passing content with Slot](https://github.com/Seolhun/vue-example/tree/master/cli/ch3)
@@ -49,9 +41,12 @@ Building example using VueJS step by step, you just follow up this project.
 11. [Vuex](https://github.com/Seolhun/vue-example/tree/master/cli/ch11)
 ![Vuex Flow](readmeimg/vuex.png)
 
----
-### Final Project
+## Final Project
 - [Vue Final Project](https://github.com/Seolhun/vue-example/tree/master/cli/final_project)
 	- Trader Stocks
 
+## Reference
+- [en-Vue.js](https://vuejs.org/)
+- [ko-Vue.js](https://kr.vuejs.org/v2/guide/installation.html)
+- [Udemy - Maximilian Schwarzmüller - Vue](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/overview)
 
