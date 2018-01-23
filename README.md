@@ -9,8 +9,7 @@ Building example using VueJS step by step, you just follow up this project.
 ## Course
 ![VueJS Course](readmeimg/course.png)
 
----
-### Vue JS
+## Vue JS
 1. [ch1.Template](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch1)
 2. [ch2.Directive](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch2)
 3. [ch3.Dynamic CSS](https://github.com/Seolhun/vue-example/tree/master/vuejs/ch3)
