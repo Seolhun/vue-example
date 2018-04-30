@@ -1,4 +1,4 @@
-# final
+# stock_final_project
 
 > A Vue.js project
 
